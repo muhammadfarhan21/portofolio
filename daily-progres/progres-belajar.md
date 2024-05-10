@@ -8,9 +8,11 @@
 # Pictures
 
 - #### CRUD 
-  ![CRUD](CRUD.png)
+  ![CRUD](images/CRUD.png)
 - #### Instal terminal package manager 
-  ![Winget](winget.png)
+  ![Winget](images/winget.png)
 - #### Instal git GUI and CLI 
-  ![GIT GUI](fork.png) 
-  ![GIT CLI](gti-gui.png)
+  ![GIT GUI](images/fork.png) 
+  ![GIT CLI](images/gti-gui.png)
+- #### Using git for make repo
+  ![REPO](images/repo.png)
