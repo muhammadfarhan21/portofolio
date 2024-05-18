@@ -27,7 +27,7 @@ img {
 /* CONTENT */
 
 .container {
-    background: #fafafa;
+    background: #373737;
     display: flex;
     justify-content: center;
 }
@@ -74,7 +74,7 @@ img {
     z-index: 1000;
     border-radius: 5px;
     background-color: #ffffff;
-    box-shadow: 1px 1px 3px #DFDBD8, -1px -1px 3px #DFDBD8;
+    box-shadow: 1px 1px 3px #d3ceca, -1px -1px 3px #d3ceca;
 }
 
 .container .navigation ul li {
@@ -93,6 +93,7 @@ img {
     font-weight: 700;
     display: inline-block;
     color: #4a4747;
+    transition: all 0.2s ease-in-out;
 }
 
 .container .navigation ul li a:hover {
@@ -120,7 +121,7 @@ main .profile {
 main .profile .left {
     width: 50%;
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -402,8 +403,12 @@ main .profile .right img{
 .container .footer ul {
     display: flex;
     gap: 10px;
-    font-size: 14px;
-    font-weight: 600;
+}
+
+.container .footer ul li a {
+    color: #373737;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .container .footer .copyright {
