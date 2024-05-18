@@ -38,7 +38,7 @@ img {
 
 .container .navigation {
     height: 10%;
-    width: 60%;
+    width: 915px;
     background-color: #ffffff;
     box-shadow: 3px 0 4px -5px grey,-3px 0  6px -5px rgba(128, 128, 128, 0.634);
     margin: auto;
@@ -80,7 +80,7 @@ main {
     gap: 50px;
     background-color: #fffffd;
     box-shadow: 3px 0 4px -5px grey,-3px 0  6px -5px rgba(128, 128, 128, 0.634);
-    width: 60%;
+    width: 915px;
     margin: auto;
 }
 
@@ -229,7 +229,7 @@ main .profile .right img{
     font-size: 10px;
 }
 
-/* PROJECTS AND WORKING EXPERIENCE */
+/* PROJECTS */
 
 .project-experience{
     border-top: 1px solid #DFDBD8;
@@ -270,18 +270,18 @@ main .profile .right img{
     width: fit-content;
     border-radius: 15px;
     align-items: center;
-    padding-bottom: 10px;
-    background-color: #3932321a;
-    border: 2px solid #DFDBD8;
+    padding-bottom: 15px;
+    box-shadow:inset 1px 1px 2px #DFDBD8, inset -1px -1px 2px #DFDBD8;
 }
 
 .box-content .up .image {
-
+    padding: 8px 8px 0 8px;
+    border-bottom: 1px solid #DFDBD8;
 }
 
 .box-content .up .image img {
     width: 250px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .box-content .down {
@@ -297,8 +297,9 @@ main .profile .right img{
 }
 
 .box-content .down p {
-    width: 200px;
-    font-size: 12px;
+    width: 180px;
+    font-size: 10px;
+    text-align: center;
 }
 
 .project-experience .box-content2 {
@@ -329,22 +330,30 @@ main .profile .right img{
 }
 
 .sertificated .sertificated-container {
+    width: 70%;
     display: flex;
     gap: 12px;
-    padding:0 20px;
-    width: fit-content;
+    padding:15px 20px;
     border-radius: 15px;
     align-items: center;
+    box-shadow:inset 1px 1px 2px #DFDBD8, inset -1px -1px 2px #DFDBD8;
 }
 
-.sertificated .sertificated-container .bx-left-arrow-circle,
-.sertificated .sertificated-container .bx-right-arrow-circle{
-    font-size: 25px;
-    color: #000000ab;
+.sertificated .sertificated-container .images {
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    
 }
+
+.sertificated .sertificated-container .images img {
+    width: 240px;
+}
+
+/* FOOTER */
 
 .container .footer {
-    width: 60%;
+    width: 915px;
     margin: auto;
     background-color: #ffffff;
     box-shadow: 3px 0 4px -5px grey,-3px 0  6px -5px rgba(128, 128, 128, 0.634);
