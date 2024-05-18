@@ -27,37 +27,49 @@ img {
 /* CONTENT */
 
 .container {
-    width: 100%;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+}
+
+.container .container-content {
+    width: 915px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #fafafa;
+    background-image: url("/Assets/background.jpg");
+    background-size: cover;
 }
 
 /* NAVIGATION STYLE */
 
 .container .navigation {
     height: 10%;
-    width: 915px;
-    background-color: #ffffff;
-    box-shadow: 3px 0 4px -5px grey,-3px 0  6px -5px rgba(128, 128, 128, 0.634);
+    width: 100%;
     margin: auto;
+    padding-top: 10px;
 }
 
 .container .navigation ul {
+    margin: auto;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 13px 20% 0 20%;
-    border-bottom: 1px solid #DFDBD8;
+    align-items: center;
+    border: 1px solid #DFDBD8;
+    border-radius: 25px;
+    background-color: #ffffff;
 }
 
 .container .navigation ul li {
-    height: 37px;
+    margin: auto;
+    padding: 8px 6px;
+    display: flex;
+    align-items: center;
 }
 
 .container .navigation ul li:hover{
-    border-bottom: 2px solid #D45738;
     color: #D45738;
 }
 
@@ -65,7 +77,7 @@ img {
     font-size: 11px;
     font-weight: 800;
     display: inline-block;
-    height: 37px;
+    color: #4a4747;
 }
 
 .container .navigation ul li a:hover {
@@ -78,7 +90,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color: #fffffd;
     box-shadow: 3px 0 4px -5px grey,-3px 0  6px -5px rgba(128, 128, 128, 0.634);
     width: 915px;
     margin: auto;
@@ -87,13 +98,14 @@ main {
 main .profile {
     display: flex;
     justify-content: center;
-    gap: 40px;
     padding: 6% 13% 0 10%;
-    border-bottom: 1px solid #DFDBD8;
+    border-bottom: 1px solid #fffffffd;
 }
 
 main .profile .left {
     width: 50%;
+    padding: 20px;
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -131,6 +143,7 @@ main .profile .left .icon-sosmed a {
 
 main .profile .right {
     height: 250px;
+    background-color: #ffffff;
 }
 
 main .profile .right img{
@@ -142,7 +155,7 @@ main .profile .right img{
 
 .skill {
     margin-top: 10%;
-    border-top: 1px solid #DFDBD8;
+    border-top: 1px solid #ffffff;
 }
 
 .skill .box-skill {
@@ -156,6 +169,7 @@ main .profile .right img{
 }
 
 .skill .box-skill .box1 {
+    height: fit-content;
     padding: 20px 20px;
     border: 1px solid #DFDBD8;
     border-radius: 12px 0  0 12px;
@@ -181,6 +195,7 @@ main .profile .right img{
 }
 
 .skill .box-skill .box2 {
+    height: fit-content;
     padding: 20px 20px;
     border: 1px solid #DFDBD8;
     background-color: #ffffff;
@@ -205,6 +220,7 @@ main .profile .right img{
 }
 
 .skill .box-skill .box3 {
+    height: fit-content;
     padding: 20px 20px;
     border: 1px solid #DFDBD8;
     border-radius: 0 12px 12px 0;
@@ -232,7 +248,7 @@ main .profile .right img{
 /* PROJECTS */
 
 .project-experience{
-    border-top: 1px solid #DFDBD8;
+    border: 1px solid #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -252,7 +268,7 @@ main .profile .right img{
     grid-area: header;
     justify-content: center;
     transform: translateY(-18px);
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 0 10px;
 }
 
@@ -271,7 +287,7 @@ main .profile .right img{
     border-radius: 15px;
     align-items: center;
     padding-bottom: 15px;
-    box-shadow:inset 1px 1px 2px #DFDBD8, inset -1px -1px 2px #DFDBD8;
+    border: 1px solid #DFDBD8;
 }
 
 .box-content .up .image {
@@ -294,12 +310,14 @@ main .profile .right img{
     font-size: 15px;
     text-align: center;
     margin-top: 10px;
+    color: #4a4747;
 }
 
 .box-content .down p {
     width: 180px;
     font-size: 10px;
     text-align: center;
+    color: #4a4747;
 }
 
 .project-experience .box-content2 {
@@ -313,7 +331,7 @@ main .profile .right img{
 /* SERTIFICATE */
 
 .sertificated {
-  border-top: 1px solid #DFDBD8;
+  border-top: 1px solid #ffffff;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -324,7 +342,7 @@ main .profile .right img{
 
 .sertificated .head-sertif {
     text-align: center;
-    background-color: #ffffff;
+    background-color: transparent;
     transform: translateY(-18px);
     padding: 0 10px;
 }
@@ -336,7 +354,8 @@ main .profile .right img{
     padding:15px 20px;
     border-radius: 15px;
     align-items: center;
-    box-shadow:inset 1px 1px 2px #DFDBD8, inset -1px -1px 2px #DFDBD8;
+    background-color: #ffffff;
+    border: 1px solid #DFDBD8;
 }
 
 .sertificated .sertificated-container .images {
@@ -355,14 +374,13 @@ main .profile .right img{
 .container .footer {
     width: 915px;
     margin: auto;
-    background-color: #ffffff;
-    box-shadow: 3px 0 4px -5px grey,-3px 0  6px -5px rgba(128, 128, 128, 0.634);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 30px;
-    border-top: 1px solid #DFDBD8;
+    background-color: #dfdbd869;
+    border-top: 1px solid #ffffff;
 }
 
 .container .footer ul {
