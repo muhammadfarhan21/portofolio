@@ -39,7 +39,6 @@ img {
     justify-content: center;
     background-image: url("/Assets/background.jpg");
     background-size: cover;
-    
 }
 
 /* NAVIGATION STYLE */
@@ -114,8 +113,8 @@ main {
 main .profile {
     display: flex;
     justify-content: center;
-    padding: 6% 13% 0 10%;
     border-bottom: 1px solid #d3ceca;
+    padding: 70px 0 0;
 }
 
 main .profile .left {
@@ -125,25 +124,26 @@ main .profile .left {
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-left: 1px solid #DFDBD8;
+    border-top: 1px solid  #DFDBD8;
 }
 
 main .profile .left h2{
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 900;
-    margin-bottom: 5px;
 }
 
 main .profile .left h4 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #D45738;
     margin-bottom: 10px;
 }
 
 main .profile .left p {
-    font-size: 12px;
-    text-align: center;
-    padding: 0 18px;
+    font-size: 11px;
+    text-align: justify;
+    padding: 0 60px;
     margin-bottom: 20px;
 }
 
@@ -157,14 +157,20 @@ main .profile .left .icon-sosmed a {
     color: #D45738;
 }
 
+main .profile .left .icon-sosmed a i {
+    padding: 4px;
+    border: 1px solid #D45738;
+    border-radius: 5px;
+}
+
 main .profile .right {
-    height: 250px;
+    height: 280px;
     background-color: #ffffff;
 }
 
 main .profile .right img{
-    width: 250px;
-    height: 250px;
+    width: 255px;
+    height: 281px;
 }
 
 /* SKILLS SECTION */
@@ -265,17 +271,9 @@ main .profile .right img{
 
 .project-experience{
     border-top: 1px solid #d3ceca;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "header header"
-        "main1 main2"
-        "main3 main4";
-    row-gap: 30px;
-    column-gap: 20px;
-    grid-auto-columns: 100px;
-    justify-items: center;
-    padding: 0 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transform: translateY(-80px);
 }
 
@@ -286,63 +284,50 @@ main .profile .right img{
     transform: translateY(-18px);
     background-color: white;
     padding: 0 10px;
-}
-
-.project-experience .box-content1 {
-    grid-area: main1;
-}
-
-.project-experience  .box-content3 {
-    grid-area: main2;
+    margin-bottom: 30px;
 }
 
 .box-content {
+    width: 78%;
     display: flex;
-    flex-direction: column;
-    width: fit-content;
+    flex-direction: row;
+    gap: 40px;
     border-radius: 5px;
     align-items: center;
-    padding-bottom: 15px;
+    justify-content: space-between;
     background-color: #ffffff;
     border: 1px solid #DFDBD8;
-}
-
-.box-content .up .image {
-    padding: 8px 8px 0 8px;
-    border-bottom: 1px solid #DFDBD8;
+    padding-right: 20px;
 }
 
 .box-content .up .image img {
-    width: 250px;
+    height: 100px;
     border-radius: 5px 5px 0 0;
 }
 
-.box-content .down {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.box-content .down h4 {
+.box-content  h4 {
     font-size: 15px;
     text-align: center;
     margin-top: 10px;
     color: #4a4747;
 }
 
-.box-content .down p {
+.box-content  p {
     width: 180px;
     font-size: 10px;
     text-align: center;
     color: #4a4747;
 }
 
-.project-experience .box-content2 {
-    grid: main2;
+.box-content input {
+    padding: 4px 8px;
+    border: 1px solid #DFDBD8;
+    border-radius: 4px;
 }
 
-.project-experience .box-content4{
-    grid-area: main4;
+.box-content input:hover {
+    background-color: #D45738;
+    color: #ffffff;
 }
 
 /* SERTIFICATE */
@@ -365,7 +350,7 @@ main .profile .right img{
 }
 
 .sertificated .sertificated-container {
-    width: 70%;
+    width: 78%;
     display: flex;
     gap: 12px;
     padding:15px 20px;
